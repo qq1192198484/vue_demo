@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>vue_shop</title>
+    <link rel="icon" href="./static/images/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css" />
+    <script src="./static/js/html5.js"></script>
+    <script src="./static/js/jquery.js"></script>
+    <script src="./static/js/swiper.min.js"></script>
+    <script src="./static/js/jquery.jqzoom.js"></script>
+    <script src="./static/js/base.js"></script>
+    <script>
+      $(document).ready(function() {
+        //焦点图
+        var mySwiper = new Swiper('#slide', {
+          autoplay: 1000,
+          visibilityFullFit: true,
+          loop: true,
+          pagination: '.pagination',
+          paginationClickable: true
+
+        });
+      })
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
